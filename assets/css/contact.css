@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f7fafc;
+    color: #4a5568;
+  }
+  
+  .container {
+    max-width: 32rem;
+    margin: 0 auto;
+    padding: 1.25rem;
+  }
+  
+  /* Form styles */
+  .bg-white {
+    background-color: #fff;
+  }
+  
+  .shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-3xl {
+    font-size: 1.875rem;
+  }
+  
+  .font-semibold {
+    font-weight: 600;
+  }
+  
+  .text-gray-700 {
+    color: #4a5568;
+  }
+  
+  .text-gray-400 {
+    color: #cbd5e0;
+  }
+  
+  .m-7 {
+    margin: 1.75rem;
+  }
+  
+  .mb-6 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .block {
+    display: block;
+  }
+  
+  .mb-2 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .text-sm {
+    font-size: 0.875rem;
+  }
+  
+  .text-gray-600 {
+    color: #718096;
+  }
+  
+  .text-gray-300 {
+    color: #e2e8f0;
+  }
+  
+  .text-indigo-500 {
+    color: #667eea;
+  }
+  
+  .border {
+    border-width: 1px;
+    border-style: solid;
+  }
+  
+  .border-gray-300 {
+    border-color: #e2e8f0;
+  }
+  
+  .rounded-md {
+    border-radius: 0.375rem;
+  }
+  
+  .focus\:outline-none:focus {
+    outline: none;
+  }
+  
+  .focus\:ring {
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.5);
+  }
+  
+  .focus\:ring-indigo-100:focus {
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  }
+  
+  .focus\:border-indigo-300:focus {
+    border-color: #667eea;
+  }
+  
+  .dark\:bg-gray-700 {
+    background-color: #4a5568;
+  }
+  
+  .dark\:text-white {
+    color: #fff;
+  }
+  
+  .dark\:placeholder-gray-500::placeholder {
+    color: #cbd5e0;
+  }
+  
+  .dark\:border-gray-600 {
+    border-color: #718096;
+  }
+  
+  .dark\:focus\:ring-gray-900:focus {
+    box-shadow: 0 0 0 3px rgba(55, 65, 81, 0.5);
+  }
+  
+  .dark\:focus\:border-gray-500:focus {
+    border-color: #cbd5e0;
+  }
+  
+  /* Form input styles */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.375rem;
+    outline: none;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  /* Button styles */
+  button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #667eea;
+    color: #fff;
+    border: none;
+    border-radius: 0.375rem;
+    outline: none;
+  }
+  
+  /* Result text styles */
+  .text-base {
+    font-size: 1rem;
+  }
+  
+  .text-gray-400 {
+    color: #cbd5e0;
+  }
