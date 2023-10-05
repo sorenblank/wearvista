@@ -1,5 +1,25 @@
 import products from '../scripts/products.js';
 const cartItemsJSON = localStorage.getItem("myCart");
+const orderId = localStorage.getItem("orderId");
+
+function generateRandomOrderId(length) {
+  let result = '';
+  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+
+  for (let i = 0; i < length; i++) {
+    const randomIndex = Math.floor(Math.random() * characters.length);
+    result += characters.charAt(randomIndex);
+  }
+
+  return result;
+};
+
+
+if (orderId === null) {
+  // If orderId doesn't exist, generate a new one
+  const newOrderId = generateRandomOrderId(8); // You can use the previously defined generateRandomOrderId function
+  localStorage.setItem("orderId", newOrderId);
+};
 
 const cartItems = JSON.parse(cartItemsJSON) || [];
 
@@ -30,6 +50,8 @@ let total = 0;
 
 
 if (matchedProducts.length > 0) {
+
+  document.getElementById("order-id").value = orderId;
 
   matchedProducts.forEach((product, index) => {
     total += parseFloat(product.price * product.quantity);
@@ -131,8 +153,7 @@ document.getElementById("place-order").addEventListener("click", (event)=>{
     // event.preventDefault();
     if (matchedProducts.length > 0) {
 
-      localStorage.clear("myCart");
-
+      localStorage.clear();
       
     }
 });
